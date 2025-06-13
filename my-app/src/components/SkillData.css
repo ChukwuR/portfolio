@@ -1,0 +1,62 @@
+#skill #title, #skill .title, #skill .percentageRating{
+    font-weight: bold;
+}
+
+.percentageRating{
+    font-size: larger;
+    font-weight: bold;
+}
+
+#skill #skillCard{
+    background-color: rgba(128, 128, 128, 0.192);
+    /* height: 150px; */
+    margin: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#skill #skillCard:hover{
+    scale: 1.2;
+    background-color: rgba(128, 128, 128, 0.24);
+    transition: 0.5s ease-in-out;
+}
+
+@media(min-width: 767px){
+    #skill #skillHeadContent h1, #skill #skillHeadContent #skillTxt, #skill #skillHeadContent p, #skill .title, #skill .percentageRating{
+        color: white;
+    }
+
+    #skill #skillCard{
+        background-color: rgba(128, 128, 128, 0.192);
+    }
+}
+
+@media(max-width: 767px){
+    #skill #skillCard{
+        background-color: black;
+    }
+}
+
+body.light{
+    #skill #skillHeadContent p{
+        color: black;
+    }
+
+    #skill #skillCardTxt p, #skill #skillCard #skillCardTxt .percentageRating{
+        color: white;
+    }
+}
+
+body.dark{
+    #skill #skillHeadContent h1, #skill #skillHeadContent p{
+        color: white;
+    }
+
+    #skill #skillCardTxt p, #skill #skillCard #skillCardTxt .percentageRating{
+        color: white;
+    }
+
+    #skill #skillCard{
+        background-color: rgba(128, 128, 128, 0.192);
+    }
+}

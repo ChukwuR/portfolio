@@ -1,0 +1,31 @@
+#welcome{
+    /* color: #7DF9FF; */
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 100px;
+    text-align: start;
+    justify-self: center;
+}
+
+#profImage:hover{
+  scale: 1.1;
+  transition: 0.5s ease-in;
+}
+
+@media(min-width: 767px){
+  .switch{
+    visibility: hidden;
+  }
+}
+
+@media(min-width: 768px){
+  #welcome{
+    color: #7DF9FF;
+  }
+}
+
+body.dark{
+  #welcome{
+    color: white;
+  }
+}

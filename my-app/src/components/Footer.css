@@ -1,0 +1,41 @@
+footer{
+    padding: 60px;
+    margin-top: 50px;
+    background-color: rgba(128, 128, 128, 0.089);
+    border-radius: 20px;
+}
+
+footer #footerCard{
+    height: 200px;
+    border-radius: 5px;
+    border-image: url(image/borderColor.jpeg);
+    border-image-slice: 120 70;
+    border-image-width: 5px 5px 5px 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+footer #footerCard p i{
+    font-size: xx-large;
+    margin: 20px;
+    color: rgba(255, 255, 255, 0.671);
+}
+
+footer #footerCard p, footer #footerCard p a{
+    color: rgba(255, 255, 255, 0.671);
+    text-decoration: none;
+    font-size: larger;
+}
+
+footer #footerCard p i:hover, footer #footerCard p:hover, footer #footerCard p a:hover{
+    color: white;
+}
+
+footer #socialGroup{
+    margin-top: 50px;
+}
+
+footer #social{
+    font-size: x-large;
+    margin: 20px;
+}

@@ -1,0 +1,17 @@
+@media(min-width: 767px){
+    #reviewHead h3#reviewTxt, #reviewCount div#count p{
+        color: white;
+    }
+}
+
+/* body.light{
+    #reviewHead h3{
+        color: black;
+    }
+} */
+
+body.dark{
+    #reviewHead h3#reviewTxt, #reviewCount div#count p{
+        color: white;
+    }
+}

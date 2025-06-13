@@ -1,0 +1,36 @@
+#priceCard{
+    margin: 10px;
+    border-radius: 25px;
+}
+
+#region, #hour, #project, #consult{
+    margin-top: auto;
+}
+
+#region p, #hour p, #project p, #consult p{
+    color: white;
+}
+
+#priceCard:hover{
+    background-color: rgba(128, 128, 128, 0.24);
+    scale: 1.05;
+    transition: 0.2s ease-in-out;
+}
+
+@media(min-width: 767px){
+    #priceCard{
+        background-color: rgba(128, 128, 128, 0.192);
+    }
+}
+
+@media(max-width: 767px){
+    #priceCard{
+        background-color: black;
+    }
+}
+
+body.dark{
+    #priceCard{
+        background-color: rgba(128, 128, 128, 0.192);
+    }
+}

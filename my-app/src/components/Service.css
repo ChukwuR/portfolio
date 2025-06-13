@@ -1,0 +1,54 @@
+#service #serviceCard{
+    height: 400px;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 25px;
+    justify-self: center;
+}
+
+#service div#serviceContent #serviceCard{
+    background-color: rgba(128, 128, 128, 0.192);
+}
+
+#service #serviceContent #serviceCard:hover{
+    background-color: rgba(128, 128, 128, 0.24);
+    scale: 1.05;
+    transition: 0.2s ease-in-out;
+}
+
+@media(min-width: 767px){
+    #service h1#serviceHead, #service p#serivceHeadTxt, #service #serviceCard p#serviceCardText li{
+        color: white;
+    }
+
+    #service div#serviceContent #serviceCard{
+        background-color: rgba(128, 128, 128, 0.192);
+    }
+}
+
+@media(max-width: 767px){
+    #service h1, #service p, #service #serviceCard p#serviceCardText li{
+        color: white;
+    }
+
+    #service div#serviceContent #serviceCard{
+        background-color: black;
+    }
+}
+
+body.light{
+    #service h1, #service p{
+        color: black;
+    }
+
+    #service #serviceCard p{
+        color: white;
+    }
+}
+
+body.dark{
+    #service div#serviceContent #serviceCard{
+        background-color: rgba(128, 128, 128, 0.192);
+    }
+}

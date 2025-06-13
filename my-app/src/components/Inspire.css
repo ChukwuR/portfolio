@@ -1,0 +1,37 @@
+#engage{
+    background-color: rgba(128, 128, 128, 0.192);
+    /* height: 400px; */
+    padding-bottom: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#engage p{
+    font-weight: bold;
+    color: white;
+}
+
+#engage:hover{
+    scale: 1.1;
+    margin-top: 20px;
+    transition: 0.5s ease-in;
+}
+
+@media(max-width: 767px){
+    #engage p{
+        color: white;
+    }
+}
+
+@media(min-width: 768px){
+    #engageCard #engage{
+        background-color: rgba(128, 128, 128, 0.192);
+    }
+}
+
+body.light{
+    #engage{
+        background-color: black;
+    }
+}

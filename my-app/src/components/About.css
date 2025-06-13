@@ -1,0 +1,54 @@
+#aboutStartTamplete{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.507)), url(image/aboutImages/aboutTamplete.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 50px;
+    border: transparent;
+    justify-self: center;
+}
+
+#aboutStartTamplete p{
+    color: white;
+    font-size: x-large;
+    margin: 50px;
+}
+
+#aboutStartTamplete p#heading{
+    font-weight: bold;
+}
+
+p span#txt{
+    color: white;
+}
+
+body.light{
+    #content{
+        color: black;
+    }
+
+    p span#txt{
+        color: black;
+    }
+}
+
+body.dark{
+    #content, #content p, #content li{
+        color: white;
+    }
+}
+
+@media(max-width: 767px){
+    #content{
+        width: 380px;
+        justify-self: center;
+    }
+}
+
+@media(min-width: 768px){
+    #content h1, #content p, #content li{
+        color: white;
+    }
+}

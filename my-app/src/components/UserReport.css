@@ -1,0 +1,102 @@
+*{
+    font-size: large;
+}
+
+#userDetailFeedback{
+    justify-content: center;
+}
+
+#userId{
+    background: none;
+    border: none;
+    color: white;
+}
+
+/* #userFeedbackImg:hover{
+    scale: 1.05;
+    transition: 0.5s ease-in-out;
+} */
+
+#userFeedbackImg{
+    animation-name: stretch;
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+#result{
+    border-radius: 20px;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(0.5);
+    border-radius: 60px;
+  }
+  100% {
+    transform: scale(1.02);
+  }
+}
+
+@media(max-width: 767px){
+    #userFeedbackImg{
+        animation: none;
+        scale: 0.6;
+    }
+
+    #workExp{
+        justify-self: center;
+    }
+
+    #userId{
+        width: 400px;
+        justify-self: center;
+    }
+}
+
+#result{
+    background-color: rgba(128, 128, 128, 0.192);
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#result:hover{
+    background-color: rgba(128, 128, 128, 0.24);
+    scale: 1.05;
+    transition: 0.2s ease-in-out;
+}
+
+p h1{
+    color: white;
+}
+
+body.light{
+    p h1{
+        color: black;
+    }
+
+    #userId{
+        color: black;
+    }
+
+    #result{
+        background-color: rgba(0, 0, 0, 0.851);
+    }
+}
+
+@media(max-width: 767px){
+    #userId{
+        color: white;
+    }
+}
+
+@media(min-width: 768px){
+    #userHead h1{
+        color: white;
+    }
+}

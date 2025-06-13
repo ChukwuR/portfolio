@@ -1,0 +1,106 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+#logoImg:hover {
+  filter: drop-shadow(0 0 2em #64ff86aa);
+}
+#logoImg.react:hover {
+  filter: drop-shadow(0 0 2em #64ff86aa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* navbar */
+#navbar{
+  font-weight: bold;
+  border-radius: 7px;
+}
+
+#logoImg{
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+
+#navLink {
+  font-size: large;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+#navLink::after,
+#navLink::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #64ff86aa, #00ffff);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease-out;
+}
+
+#navLink::before {
+  top: -5px;
+  transform-origin: left;
+}
+
+#navLink:hover::after,
+#navLink:hover::before {
+  transform: scaleX(1);
+}
+
+@media(max-width: 767px){
+  #smLink{
+    visibility: visible;
+  }
+
+  #bgLink{
+    visibility: hidden;
+  }
+
+  div nav#navbar .container{
+    height: 120px;
+  }
+}
+
+@media(min-width: 768px){
+  #smLink{
+    visibility: hidden;
+  }
+}
