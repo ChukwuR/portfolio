@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import './Form.css'
 
 function Form(){
@@ -27,7 +28,7 @@ function Form(){
                         <img src="https://media.istockphoto.com/id/1094780808/vector/approval-symbol-check-mark-in-a-circle-drawn-by-hand-vector-green-sign-ok-approval-or.jpg?s=612x612&w=0&k=20&c=0mlB50r769kHmLkVcq_HpdNFGdHIA_Cu_tPqN4IKZbc=" style={{width:'250px', height:'250px', borderRadius:'50%', backgroundColor:'grey'}} alt="successImg" />
                         <p className='lead text-white'>Thank you! I'll review your request and get back to you soon.</p> <br />
                         <br />
-                        <a href="http://localhost:5173/HomePage">Go-Back</a>
+                        <Link to='/homePage'>Go-Back</Link>
                     </div>
                 ):(
                 <form action="" onSubmit={submitBtn} className='mt-5'>
