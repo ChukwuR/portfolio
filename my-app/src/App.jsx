@@ -56,7 +56,7 @@ function App() {
 
               {/* pages routes */}
             <Routes>
-              <Route path='/HomePage' element={<HomePage/>}/>
+              <Route path='/' element={<HomePage/>}/>
               <Route path='/About' element={<About/>}/>
               <Route path='/Form' element={<Form/>}/>
             </Routes>
